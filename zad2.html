@@ -9,18 +9,28 @@
 <body>
     <div id="pudelko2">
         <h2>Kalkulator Prowizyjny</h2>
-        <div class="marza">
+        <div>
             <span>Marża (%)</span><br>
-            <input type="number">
+            <input type="number" id="marza">
         </div>
-        <div class="marza">
+        <div>
             <span>Sprzedaż</span><br>
-            <input type="number">
+            <input type="number" id="sprzedaz">
         </div>
-        <button >Oblicz</button>
-        <div class="wynik2"></div>
-        <div class="wynik3"></div>
+        <button onclick="oblicz()">Oblicz</button>
+        <div id="wynik2"></div>
+        <div id="wynik3"></div>
         <a id="powrot" href="main.html">Powrót</a>
     </div>
+    <script>
+        function oblicz() {
+            marza = parseFloat(document.getElementById('marza').value);
+            sprzedaz= parseFloat(document.getElementById('sprzedaz').value);
+            obl = (marza / 100) * sprzedaz;
+            obl2 = (obl) +sprzedaz;
+            document.getElementById('wynik2') = "Prowizja (zł): " +obl;
+            document.getElementById('wynik3') = "Kwota z prowizją (zł): " +obl2;
+        }
+    </script>
 </body>
 </html>
