@@ -19,6 +19,7 @@
             <button onclick="oblicz()">OBLICZ</button>
         </div>
         <div id="wynik"></div>
+        <div id="wynik2"></div>
     </div>
     <div id="stopka">
         <a href="main.html">Powrót</a>
@@ -29,7 +30,7 @@
             pod = (brutto * podatek) / 100;
             netto = brutto - pod;
             document.getElementById('wynik').innerHTML ="Dochód netto: " +netto ;
-            document.getElementById('wynik').innerHTML = "Podatek: " +pod;
+            document.getElementById('wynik2').innerHTML = "Podatek: " +pod;
         }
     </script>
     </div>
