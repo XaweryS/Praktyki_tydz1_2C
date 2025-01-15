@@ -1,0 +1,43 @@
+body {
+	margin: 0px;
+    text-align: center;
+}
+#gora{
+	height: 50px;
+    background-color: #E6F1F0;
+}
+#srodek {
+    height: 907px;
+	background-color: #E6F1F0;
+	
+}
+#stopka{
+	background-color:#E6F1F0;
+	height: 68px;
+}
+a{
+	text-decoration: none;
+	font-size: 50px;
+	color: black;
+}
+h1{
+	margin: 0px;
+}
+input, button {
+	width: 50%;
+	padding: 10px;
+	margin-top: 5px;
+	border: 1px solid black;
+	border-radius: 4px;
+}
+#pudelko{
+	width: 400px;
+	margin:auto;
+	background-color: white;
+	padding: 20px;
+	border: 2px solid black;
+}
+button {
+	background-color: #007BFF;
+	color: white;
+}

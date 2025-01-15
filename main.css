@@ -1,0 +1,40 @@
+body {
+    font-size: 40px;
+    text-align: center;
+    line-height: 500px;
+    background-color: #020873;
+}
+div {
+    width: 500px;
+    height: auto;
+    float: left;
+    border: 1px solid #0D0D0D;
+}
+a {
+    text-decoration: none;
+    color: #0D0D0D;
+}
+#z1 {
+    background-color: #F028DD;
+}
+#z2 {
+    background-color: #8BF000;;
+}
+#z3 {
+    background-color: #8C0E03;
+}
+#z4 {
+    background-color: #C0A9EF;
+}
+#z5 {
+    background-color:#1E00EF;
+}
+#z6 {
+    background-color: #00E9F0;
+}
+#z7 {
+    background-color: #EF9100;
+}
+#z8 {
+    background-color: #EFE903;
+}
