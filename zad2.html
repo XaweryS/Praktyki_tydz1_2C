@@ -28,8 +28,8 @@
             sprzedaz= parseFloat(document.getElementById('sprzedaz').value);
             obl = (marza / 100) * sprzedaz;
             obl2 = (obl) +sprzedaz;
-            document.getElementById('wynik2') = "Prowizja (zł): " +obl;
-            document.getElementById('wynik3') = "Kwota z prowizją (zł): " +obl2;
+            document.getElementById('wynik2').innerHTML = "Prowizja (zł): " +obl;
+            document.getElementById('wynik3').innerHTML = "Kwota z prowizją (zł): " +obl2;
         }
     </script>
 </body>
