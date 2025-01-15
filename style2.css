@@ -5,12 +5,12 @@ body {
     text-align: center;
 }
 #pudelko2 {
-    max-width: 400px;
+    width: 400px;
     margin: auto;
     padding: 20px;
     background-color: white;
-    margin-top: 270px;
-    height: 360px;
+    margin-top: 200px;
+    height: 400px;
 }
 input {
     width: 70%;
@@ -40,10 +40,17 @@ a{
     border-radius: 7px;
     text-align: center;
     padding: 10px 20px;
-    line-height: 120px;
+    line-height: 80px;
 }
 a:hover{
     background-color:green ;
 }
-
-
+#wynik2{
+    margin-top: 10px;
+    font-size: 20px;
+	font-weight: bold;
+}
+#wynik3{
+    font-size: 20px;
+	font-weight: bold;
+}
