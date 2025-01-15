@@ -22,6 +22,16 @@
     </div>
     <div id="stopka">
         <a href="main.html">Powrót</a>
+    <script>
+        function oblicz() {
+            brutto = parseFloat(document.getElementById('brutto').value);
+            podatek = parseFloat(document.getElementById('podatek').value);
+            pod = (brutto * podatek) / 100;
+            netto = brutto - pod;
+            document.getElementById('wynik').innerHTML ="Dochód netto:" +netto;
+            document.getElementById('wynik').innerHTML = "Podatek:" +pod;
+        }
+    </script>
     </div>
 </body>
 </html>
