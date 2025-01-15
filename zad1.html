@@ -18,7 +18,7 @@
             <input type="number" id="podatek"><br>
             <button onclick="oblicz()">OBLICZ</button>
         </div>
-        <div class="wynik" id="wynik"></div>
+        <div id="wynik"></div>
     </div>
     <div id="stopka">
         <a href="main.html">Powrót</a>
@@ -28,8 +28,8 @@
             podatek = parseFloat(document.getElementById('podatek').value);
             pod = (brutto * podatek) / 100;
             netto = brutto - pod;
-            document.getElementById('wynik').innerHTML ="Dochód netto:" +netto;
-            document.getElementById('wynik').innerHTML = "Podatek:" +pod;
+            document.getElementById('wynik').innerHTML ="Dochód netto: " +netto ;
+            document.getElementById('wynik').innerHTML = "Podatek: " +pod;
         }
     </script>
     </div>
