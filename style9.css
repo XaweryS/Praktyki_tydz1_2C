@@ -1,0 +1,21 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+}
+.pudelko {
+  width: 100%;
+  height: 200px;
+  position: relative;
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#an {
+  width: 50px;
+  height: 50px;
+  background-color: #3498db;
+  border-radius: 50%;
+  position: absolute;
+  margin-top: 120px;
+}
