@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +7,19 @@
     <title>Zad6</title>
 </head>
 <body>
-    <div id="pudelko3">
+    <div id="wv">
         <h1>Kliknij aby dodać Vaporeona</h1>
-        <button>Dodaj Vaporeona</button><br>
-        <a href="main.html">Powrót</a>
+        <button onclick="kl()">Dodaj Vaporeona</button><br>
+        
     </div>
+    <script>
+        function kl() {
+            wv = document.getElementById("wv");
+            vep = document.createElement("img");
+            vep.src = "vaperion.jpg";
+            wv.appendChild(vep);
+        }
+    </script>
+    <a id="stopka" href="main.html">Powrót</a>
 </body>
 </html>

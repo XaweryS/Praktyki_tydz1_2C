@@ -15,14 +15,13 @@ button {
 button:hover {
     background-color: #005fa3;
 }
-#pudelko3{
-    max-width: 400px;
+#wv{
+    width: 400px;
     margin:auto;
     padding: 20px;
-    margin-top: 150px;
-    height: 300px;
+    height: 800px;
     background-color: white;
-    border: 3px solid #EAA05A;
+    border: 2px solid #EA1100;
 }
 a{
     text-decoration: none;
@@ -31,8 +30,13 @@ a{
     border-radius: 5px;
     text-align: center;
     padding:10px 20px ;
-    line-height: 140px;
+    line-height: 200px;
 }
 a:hover{
     background-color: #6CEF73;
+}
+
+img{
+    height: 20px;
+    width: 20px;
 }
