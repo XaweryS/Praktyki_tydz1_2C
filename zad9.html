@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html>
 <style>
-#myContainer {
-  width: 400px;
-  height: 400px;
+#pudelko {
+  width: 2000px;
+  height: 900px;
   position: relative;
   background: yellow;
 }
-#myAnimation {
-  width: 50px;
-  height: 50px;
+#ruch {
+  width: 20px;
+  height: 20px;
   position: absolute;
   background-color: red;
 }
@@ -17,16 +17,16 @@
 <body>
 
 <p>
-<button onclick="myMove()">Click Me</button> 
+<button onclick="start()">Click Me</button> 
 </p>
 
-<div id ="myContainer">
-<div id ="myAnimation"></div>
+<div id ="pudelko">
+<div id ="ruch"></div>
 </div>
 
 <script>
 var id = null;
-function myMove() {
+function start() {
   var elem = document.getElementById("myAnimation");   
   var pos = 0;
   clearInterval(id);
