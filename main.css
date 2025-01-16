@@ -4,37 +4,37 @@ body {
     line-height: 500px;
     background-color: #020873;
 }
-div {
+div{
     width: 500px;
     height: auto;
     float: left;
     border: 1px solid #0D0D0D;
 }
-a {
+a{
     text-decoration: none;
     color: #0D0D0D;
 }
-#z1 {
+#z1{
     background-color: #F028DD;
 }
-#z2 {
+#z2{
     background-color: #8BF000;;
 }
-#z3 {
+#z3{
     background-color: #8C0E03;
 }
 #z4 {
     background-color: #C0A9EF;
 }
-#z5 {
+#z5{
     background-color:#1E00EF;
 }
-#z6 {
+#z6{
     background-color: #00E9F0;
 }
-#z7 {
+#z7{
     background-color: #EF9100;
 }
-#z8 {
+#z9 {
     background-color: #EFE903;
 }

@@ -1,47 +1,55 @@
 <!DOCTYPE html>
-<html>
-<style>
-#pudelko {
-  width: 2000px;
-  height: 900px;
-  position: relative;
-  background: yellow;
-}
-#ruch {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  background-color: red;
-}
-</style>
-<body>
-
-<p>
-<button onclick="start()">Click Me</button> 
-</p>
-
-<div id ="pudelko">
-<div id ="ruch"></div>
-</div>
-
-<script>
-var id = null;
-function start() {
-  var elem = document.getElementById("myAnimation");   
-  var pos = 0;
-  clearInterval(id);
-  id = setInterval(frame, 10);
-  function frame() {
-    if (pos == 350) {
-      clearInterval(id);
-    } else {
-      pos++; 
-      elem.style.top = pos + 'px'; 
-      elem.style.left = pos + 'px'; 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style9.css">
+  <title>Zad9</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100px;
     }
-  }
-}
-</script>
+    .pudelko {
+      width: 100%;
+      height: 200px;
+      position: relative;
+      overflow: hidden;
+      background-color: #fff;
+    }
 
+    #an {
+      width: 50px;
+      height: 50px;
+      background-color: #3498db;
+      border-radius: 50%;
+      position: absolute;
+      margin-top: 120px;
+    }
+  </style>
+</head>
+<body>
+  <div class="pudelko">
+    <div id="an"></div>
+  </div>
+
+  <script>
+    an = document.getElementById('an');
+    miej = 0;
+    kier = 1;
+    dlugosc = document.querySelector('.pudelko').offsetWidth;
+    and = an.offsetWidth;
+    function anp() {
+      miej += kier * 5;
+      an.style.left = miej + 'px';
+      if (miej + and >= dlugosc || miej <= 0) {
+        kier *= -1;
+      }
+      requestAnimationFrame(anp);
+    }
+
+    anp();
+  </script>
 </body>
 </html>
