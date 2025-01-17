@@ -11,7 +11,7 @@
         <h2>Kalkulator Prowizyjny</h2>
         <div>
             <span>Cena (zł)</span><br>
-            <input type="number" id="sprzedaz">
+            <input type="number" id="cena">
         </div>
         <div>
             <span>Marża (%)</span><br>
@@ -25,9 +25,9 @@
     <script>
         function oblicz() {
             marza = parseFloat(document.getElementById('marza').value);
-            sprzedaz= parseFloat(document.getElementById('sprzedaz').value);
-            obl = (marza / 100) * sprzedaz;
-            obl2 = (obl) +sprzedaz;
+            cena= parseFloat(document.getElementById('cena').value);
+            obl = (marza / 100) * cena;
+            obl2 = (obl) +cena;
             document.getElementById('wynik2').innerHTML = "Prowizja (zł): " +obl;
             document.getElementById('wynik3').innerHTML = "Kwota z prowizją (zł): " +obl2;
         }
