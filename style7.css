@@ -5,7 +5,7 @@ body{
     align-items: center;
     height: 900px;
     margin: 0;
-    background-color: #f0f8ff;
+    background-color: #E5F9F9;
 }
 .kar{
     position: relative;
@@ -40,8 +40,8 @@ body{
 button {
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
+    
+    background-color: black;
     color: white;
     border: none;
     cursor: pointer;
@@ -50,7 +50,7 @@ button {
     border-radius: 50%;
 } 
 button:hover {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: black;
 }
 .po {
     left: 10px;
