@@ -6,26 +6,60 @@
   <title>Zad7</title>
 </head>
 <body>
-  <div id="pok">
-    <img src="mew.jpg" alt="Mewtwo">
+</head>
+<body>
+  <div class="kar">
+    <button class="po"><</button>
+    <div class="kart">
+      <ul class="karp">
+        <li class="kars aks">
+          <img src="pik.jpg" alt="Pikachu">
+          <h2>Pikachu</h2>
+        </li>
+        <li class="kars">
+          <img src="cha.jpg" alt="Charizard">
+          <h2>Charizard</h2>
+        </li>
+        <li class="kars">
+          <img src="sno.jpg" alt="Snorlax">
+          <h2>Snorlax</h2>
+        </li>
+        <li class="kars">
+          <img src="eve.jpg" alt="Eevee">
+          <h2>Eevee</h2>
+        <li class="kars">
+          <img src="mew.jpg" alt="Mewtwo">
+          <h2>Mewtwo</h2>
+        </li>
+      </ul>
+    </div>
+    <button class="na">></button>
   </div>
-  <div id="pok">
-    <img src="pik.jpg" alt="Pikachu">
-  </div>
-  <div id="pok">
-    <img src="sno.jpg" alt="Snorlax">
-  </div>
-  <div id="pok" >
-    <img src="cha.jpg" alt="Charizard">
-  </div>
-  <div id="pok">
-    <img src="eve.jpg" alt="Eevee">
-  </div>
-  <button>-</button>
-  <button>+</button>
-  </div>
-  <div id="stopka">
-    <a href="main.html">Powrót</a>
-  </div>
+<script>
+  ruch1 = document.querySelector('.karp');
+  przej = Array.from(ruch1.children);
+  pp = document.querySelector('.po');
+  np = document.querySelector('.na');
+  slideWidth = przej[0].getBoundingClientRect().width;
+  setSlidePosition = (ruch2, index) => {
+    ruch2.style.left = `${slideWidth * index}px`;
+  };
+    przej.forEach(setSlidePosition); 
+  moveToSlide = (ruch1, aks, cp) => {
+    ruch1.style.transform = `translateX(-${cp.style.left})`;
+    aks.classList.remove('aks');
+    cp.classList.add('aks');
+  };
+  np.addEventListener('click', () => {
+    aks = ruch1.querySelector('.aks');
+    kp = aks.nextElementSibling || przej[0];
+    moveToSlide(ruch1, aks, kp);
+  });
+  pp.addEventListener('click', () => {
+    aks = ruch1.querySelector('.aks');
+    prevSlide = aks.previousElementSibling || przej[przej.length - 1];
+    moveToSlide(ruch1, aks, prevSlide);
+  });
+  </script>
 </body>
 </html>
