@@ -16,11 +16,11 @@
     miej = 0;
     kier = 1;
     dlugosc = document.querySelector('.pudelko').offsetWidth;
-    and = an.offsetWidth;
+    o = an.offsetWidth;
     function anp() {
       miej += kier * 5;
       an.style.left = miej + 'px';
-      if (miej + and >= dlugosc || miej <= 0) {
+      if (miej + o >= dlugosc || miej <= 0) {
         kier *= -1;
       }
       requestAnimationFrame(anp);
