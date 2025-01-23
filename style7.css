@@ -19,7 +19,6 @@ body{
 }
 .karp{
     display: flex;
-    transition: 1s ease-in-out;
 }
 .kars{
     min-width: 100%;
@@ -40,14 +39,13 @@ body{
 button {
     position: absolute;
     top: 50%;
-    
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
     padding: 10px;
     z-index: 10;
-    border-radius: 50%;
+    border-radius: 10px;
 } 
 button:hover {
     background-color: black;
