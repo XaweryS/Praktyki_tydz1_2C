@@ -1,6 +1,8 @@
 body {
     font-family: Arial;
     background-color: #F00E00;
+    margin: 0;
+    padding: 0;
 }
 header{
     background-color: #F0D746;
@@ -43,13 +45,12 @@ header{
     height: auto;
 }
 footer{
-    height: 30px;
+    height: 39px;
     background-color: #F0D746;
     text-align: center;
     padding: 10px;
     margin: auto;
     width: 99%;
-
 }
 a{
     text-decoration: none;
