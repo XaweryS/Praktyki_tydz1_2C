@@ -30,11 +30,10 @@ body{
 .kars h2 {
     font-size: 40px;
     margin: 10px 0;
-    color: #333;
+    color: black;
 }
 button {
     position: absolute;
-    top: 50%;
     background-color: black;
     color: white;
     padding: 10px;
@@ -45,12 +44,12 @@ button:hover {
     background-color: black;
 }
 .po {
-    margin-top: -70px;
+    margin-top: 120px;
     left: 10px;
 }
   
 .na{
-    margin-top: -70px;
+    margin-top: -130px;
     right: 10px;
 }
 footer{
