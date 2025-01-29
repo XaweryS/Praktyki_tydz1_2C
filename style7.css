@@ -2,20 +2,16 @@ body{
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center;
     height: 900px;
-    margin: 0;
     background-color: #E5F9F9;
 }
 .kar{
-    position: relative;
+    height: 300px;
     width: 30%;
     border: 2px solid black;
     border-radius: 10px;
     background-color: white;
-}
-.kart {
-    overflow: hidden;
+    margin-top: 300px;
 }
 .karp{
     display: flex;
@@ -41,8 +37,6 @@ button {
     top: 50%;
     background-color: black;
     color: white;
-    border: none;
-    cursor: pointer;
     padding: 10px;
     z-index: 10;
     border-radius: 10px;
@@ -51,10 +45,12 @@ button:hover {
     background-color: black;
 }
 .po {
+    margin-top: -70px;
     left: 10px;
 }
   
 .na{
+    margin-top: -70px;
     right: 10px;
 }
 footer{
